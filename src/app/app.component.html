@@ -1,0 +1,24 @@
+<!-- header -->
+<header class="bg-blue-500 p-4">
+    <div class="container mx-auto flex items-center justify-between">
+        <!-- Brand Name -->
+        <div class="text-white text-lg font-bold">
+            Cricket Informer
+        </div>
+
+        <!-- Menu -->
+        <nav class="space-x-4">
+            <a [routerLink]="'/home'" href="#" class="text-white hover:underline">Home</a>
+            <a [routerLink]="'/live'" href="#" class="text-white hover:underline">Live</a>
+
+            <a [routerLink]="'/point-table'" href="#" class="text-white hover:underline">Point Table</a>
+        </nav>
+    </div>
+</header>
+<div class="px-28 py-4">
+  <router-outlet></router-outlet>
+  <div class="container mx-auto text-center">
+    <p>&copy; 2024 Cricket Informer. All rights reserved.</p>
+    <p class="mt-2">Designed with ❤️ by RP Consultants</p>
+</div>
+</div>
